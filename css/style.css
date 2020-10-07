@@ -78,6 +78,9 @@ nav .icon-bar-blue {
   background-color: white;
 }
 
+.bluish {
+  color: #2f436e;
+}
 .jumbotron-form > h2 {
   color: #2f436e;
   font-weight: 600;
@@ -143,12 +146,54 @@ nav .icon-bar-blue {
   margin-top: 50px;
 }
 
+/* !deploy page  */
+
+#deploy {
+  padding-top: 50px;
+}
+
+#deploy p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+#deploy .margin {
+  margin-bottom: 100px;
+}
+
+.h-250 {
+  height: 250px;
+}
+#deploy ul li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  margin: 20px;
+  opacity: 0.8;
+}
+
+#deploy ul {
+  border-left: 2px solid grey;
+  padding: 0;
+  margin-top: 0;
+}
+
+/* !media queries  */
 @media screen and (max-width: 760px) {
   .jumbotron {
     padding: 100px 0;
   }
 
-  .jumbotron-text h1 {
+  html {
+    font-size: 8px !important;
+  }
+  .h-250 {
+    height: unset;
+  }
+
+  /* .jumbotron-text h1 {
     font-size: 3.5rem;
     font-weight: 600;
   }
@@ -156,5 +201,5 @@ nav .icon-bar-blue {
   .jumbotron-text p {
     font-size: 2rem;
     font-weight: 400;
-  }
+  } */
 }
