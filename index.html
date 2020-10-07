@@ -13,6 +13,12 @@
       crossorigin="anonymous"
     />
 
+    <link
+      href="//db.onlinewebfonts.com/c/2fe381b3d8cf4ee5f331668970d8a65a?family=Sailec-Light"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -29,6 +35,8 @@
     <header>
       <nav class="navbar navbar-default my-navbar navbar-fixed-top">
         <div class="container">
+          <!-- questo appare solo quando collassa -->
+
           <div class="navbar-header">
             <button
               type="button"
@@ -42,6 +50,9 @@
               <span class="icon-bar icon-bar-blue"></span>
               <span class="icon-bar icon-bar-blue"></span>
             </button>
+
+            <!-- fine collasso  -->
+
             <a class="navbar-brand" href="#">
               <img id="logo" src="img/logo.png" alt="logo" />
             </a>
@@ -283,14 +294,22 @@
             </div>
           </div>
           <div class="row">
-            <div class="hidden-xs col-md-1">
-              <img class="arrow" src="img/arrow-right.svg" alt="" />
+            <div class="hidden-xs col-md-1 relative">
+              <div class="arrow">
+                <img class="" src="img/arrow-right.svg" alt="arrow" />
+              </div>
             </div>
             <div class="col-xs-12 col-md-10">
-              <img src="img/screenshot-database-c59bd221.png" alt="" />
+              <img
+                class="screenshot"
+                src="img/screenshot-database-c59bd221.png"
+                alt="screenshot"
+              />
             </div>
-            <div class="hidden-xs col-md-1">
-              <img class="arrow right" src="img/arrow-left.svg" alt="" />
+            <div class="hidden-xs col-md-1 relative">
+              <div class="arrow">
+                <img class="" src="img/arrow-left.svg" alt="arrow" />
+              </div>
             </div>
           </div>
           <div class="row">

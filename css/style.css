@@ -1,7 +1,18 @@
 /* classi comuni  */
 
-* {
-  font-family: "Roboto", sans-serif;
+@font-face {
+  font-family: "Sailec-Light";
+  src: url("//db.onlinewebfonts.com/t/2fe381b3d8cf4ee5f331668970d8a65a.eot");
+  src: url("//db.onlinewebfonts.com/t/2fe381b3d8cf4ee5f331668970d8a65a.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/2fe381b3d8cf4ee5f331668970d8a65a.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/2fe381b3d8cf4ee5f331668970d8a65a.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/2fe381b3d8cf4ee5f331668970d8a65a.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/2fe381b3d8cf4ee5f331668970d8a65a.svg#Sailec-Light")
+      format("svg");
 }
 
 .relative {
@@ -203,21 +214,28 @@ nav .icon-bar-blue {
 
 #design img {
   width: 100%;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
-#design .arrow {
-  width: 50px;
-  position: relative;
-  top: calc(620px / 2);
+.arrow {
+  position: absolute;
+  top: 300px;
+}
+
+.arrow img {
+  height: 50px;
 }
 
 .dots i:first-child {
   color: blue;
 }
 
+#design .screenshot {
+  margin-bottom: 20px;
+}
+
 /* !media queries  */
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
   .jumbotron {
     padding: 100px 0;
   }
@@ -228,14 +246,24 @@ nav .icon-bar-blue {
   .h-250 {
     height: unset;
   }
+}
 
-  /* .jumbotron-text h1 {
-    font-size: 3.5rem;
-    font-weight: 600;
+@media (min-width: 768px) and (max-width: 1200px) {
+  .navbar-collapse.collapse {
+    display: none !important;
   }
-
-  .jumbotron-text p {
-    font-size: 2rem;
-    font-weight: 400;
-  } */
+  .navbar-collapse.collapse.in {
+    display: block !important;
+  }
+  .navbar-header .collapse,
+  .navbar-toggle {
+    display: block !important;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .arrow {
+    position: absolute;
+    top: 250px;
+  }
 }
