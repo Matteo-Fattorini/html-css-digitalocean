@@ -174,10 +174,42 @@ nav .icon-bar-blue {
   opacity: 0.8;
 }
 
+#deploy ul li:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
 #deploy ul {
   border-left: 2px solid grey;
   padding: 0;
   margin-top: 0;
+}
+
+/* !design section  */
+
+#design {
+  background-color: #f3f5f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#design p {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 20px;
+  opacity: 0.8;
+  margin-bottom: 100px;
+}
+
+#design img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#design .arrow {
+  width: 50px;
+  position: relative;
+  top: calc(620px / 2);
 }
 
 /* !media queries  */
