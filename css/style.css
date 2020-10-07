@@ -1,7 +1,7 @@
 /* classi comuni  */
 
 * {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Roboto", sans-serif;
 }
 
 .relative {
@@ -210,6 +210,10 @@ nav .icon-bar-blue {
   width: 50px;
   position: relative;
   top: calc(620px / 2);
+}
+
+.dots i:first-child {
+  color: blue;
 }
 
 /* !media queries  */
