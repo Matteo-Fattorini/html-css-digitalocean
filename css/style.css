@@ -4,6 +4,11 @@
   font-family: "Roboto", sans-serif !important;
 }
 
+.relative {
+  position: relative;
+}
+
+/* !navigation bar  */
 #logo {
   height: 30px;
   margin-right: 100px;
@@ -16,6 +21,10 @@
 nav {
   padding: 10px 0;
   background-color: white !important;
+}
+
+.navbar-right {
+  margin-right: 0 !important;
 }
 
 nav ul li a {
@@ -37,14 +46,98 @@ nav .icon-bar-blue {
   border: 1px solid blue;
 }
 
+/* !inizio jumbo  */
+
 .jumbotron {
   background-image: url("../img/09202e9a-bg-home-hero-3.svg");
-  color: white;
   background-size: cover;
-  height: 800px;
+  padding: 200px 0;
   margin-top: 15px;
 }
 
-.jumbotron .row * {
-  font-size: 3rem;
+.jumbotron-text {
+  color: white;
+}
+
+.jumbotron-text h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.jumbotron-text p {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.jumbotron-form {
+  padding: 20px 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+}
+
+.jumbotron-form > h2 {
+  color: #2f436e;
+  font-weight: 600;
+}
+.jumbotron-form > h2:nth-child(2) {
+  color: #0066ff;
+  font-weight: 600;
+}
+.jumbotron-form div:last-child {
+  margin-top: 10px;
+}
+.jumbotron-form div:last-child a {
+  text-decoration: underline;
+  color: #579aff;
+}
+
+#create-account-button {
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: #579aff;
+  font-weight: 600;
+}
+
+#sign-up-button {
+  width: 100%;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+#google-logo {
+  position: absolute;
+  left: 40px;
+  display: inline-block;
+
+  height: 20px;
+  vertical-align: middle;
+}
+
+.jumbotron-form button {
+  box-shadow: lightgrey 1px 1px !important;
+}
+.jumbotron-form button:last-child {
+  color: grey;
+  font-weight: 800;
+}
+.jumbotron-form input::placeholder {
+  color: grey;
+}
+
+@media screen and (max-width: 760px) {
+  .jumbotron {
+    padding: 100px 0;
+  }
+
+  .jumbotron-text h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+
+  .jumbotron-text p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
 }
