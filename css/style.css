@@ -35,6 +35,13 @@ h1 {
   height: 250px;
 }
 
+.m-left {
+  margin-left: 20px;
+}
+.m-right {
+  margin-right: 20px;
+}
+
 .m-bot {
   margin-bottom: 50px;
 }
@@ -250,17 +257,12 @@ nav .icon-bar-blue {
 
 #design img,
 #teams img {
-  width: 100%;
-  /* margin-bottom: 20px; */
+  width: 80%;
 }
 
-.arrow {
-  position: absolute;
-  top: 300px;
-}
-
-.arrow img {
-  height: 50px;
+#design .min,
+#teams .min {
+  width: 5%;
 }
 
 .dots i:first-child {
@@ -371,6 +373,16 @@ footer a {
     padding: 100px 0;
   }
 
+  #design img,
+  #teams img {
+    width: 100%;
+  }
+
+  #design .min,
+  #teams .min {
+    display: none;
+  }
+
   html {
     font-size: 8px !important;
   }
@@ -405,10 +417,11 @@ footer a {
   .navbar-header {
     float: none;
   }
-  .arrow {
-    position: absolute;
-    top: 250px;
+
+  .min {
+    display: none;
   }
+
   #service .m-right {
     margin-right: 0;
   }
