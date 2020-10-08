@@ -19,6 +19,14 @@
   position: relative;
 }
 
+h3 {
+  font-weight: 600;
+}
+
+h1 {
+  font-weight: 600;
+}
+
 /* !navigation bar  */
 #logo {
   height: 30px;
@@ -149,7 +157,7 @@ nav .icon-bar-blue {
   text-align: center;
 }
 
-#logo-page h4 {
+#logo-page h3 {
   color: grey;
   margin-bottom: 30px;
 }
@@ -247,6 +255,51 @@ nav .icon-bar-blue {
   margin-bottom: 20px;
 }
 
+/* !inizio features  */
+
+#features {
+  padding: 50px 0;
+}
+
+#features .row div {
+  margin-bottom: 70px;
+}
+
+/* !inizio service  */
+
+#service {
+  background-color: #0044c2;
+  color: white;
+  padding: 50px 0;
+}
+#service .row > div:nth-child(1) {
+  margin-bottom: 30px;
+}
+
+#service .border div {
+  border-bottom: 2px solid white;
+}
+
+#service .m-right {
+  margin-right: 30px;
+}
+#service .m-bot {
+  margin-bottom: 20px;
+}
+
+#service .border div:nth-child(1),
+.border div:nth-child(2) {
+  font-weight: 600;
+}
+
+#service .opacity {
+  opacity: 0.7;
+}
+
+#service a {
+  color: #00d4d2;
+}
+
 /* !media queries  */
 @media screen and (max-width: 768px) {
   .jumbotron {
@@ -263,6 +316,10 @@ nav .icon-bar-blue {
   #logo-page img {
     float: left;
     margin-right: calc(100% / 4 - 60px);
+  }
+
+  #service .m-right {
+    margin-right: 0;
   }
 }
 
@@ -283,5 +340,8 @@ nav .icon-bar-blue {
   .arrow {
     position: absolute;
     top: 250px;
+  }
+  #service .m-right {
+    margin-right: 0;
   }
 }
