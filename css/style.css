@@ -157,6 +157,19 @@ nav .icon-bar-blue {
   margin-top: 50px;
 }
 
+#logo-page img-container {
+  width: 100%;
+}
+
+#logo-page img {
+  float: left;
+  margin-right: calc(100% / 12 - 50px);
+}
+
+#logo-page li {
+  list-style-type: none;
+}
+
 /* !deploy page  */
 
 #deploy {
@@ -245,6 +258,11 @@ nav .icon-bar-blue {
   }
   .h-250 {
     height: unset;
+  }
+
+  #logo-page img {
+    float: left;
+    margin-right: calc(100% / 4 - 60px);
   }
 }
 
