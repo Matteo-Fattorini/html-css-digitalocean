@@ -27,6 +27,14 @@ h1 {
   font-weight: 600;
 }
 
+.h-250 {
+  height: 250px;
+}
+
+.m-bot {
+  margin-bottom: 50px;
+}
+
 /* !navigation bar  */
 #logo {
   height: 30px;
@@ -195,9 +203,6 @@ nav .icon-bar-blue {
   margin-bottom: 100px;
 }
 
-.h-250 {
-  height: 250px;
-}
 #deploy ul li {
   list-style-type: none;
   margin-bottom: 20px;
@@ -217,15 +222,17 @@ nav .icon-bar-blue {
   margin-top: 0;
 }
 
-/* !design section  */
+/* !design section e teams  */
 
-#design {
+#design,
+#teams {
   background-color: #f3f5f9;
   padding: 50px 0;
   text-align: center;
 }
 
-#design p {
+#design p,
+#teams p {
   font-size: 2rem;
   font-weight: 400;
   margin-top: 20px;
@@ -233,7 +240,8 @@ nav .icon-bar-blue {
   margin-bottom: 100px;
 }
 
-#design img {
+#design img,
+#teams img {
   width: 100%;
   /* margin-bottom: 20px; */
 }
@@ -251,7 +259,11 @@ nav .icon-bar-blue {
   color: blue;
 }
 
-#design .screenshot {
+.dots {
+  margin-top: 20px;
+}
+
+#design .screenshot #teams .screenshot {
   margin-bottom: 20px;
 }
 
@@ -270,7 +282,7 @@ nav .icon-bar-blue {
 #service {
   background-color: #0044c2;
   color: white;
-  padding: 50px 0;
+  padding-top: 200px;
 }
 #service .row > div:nth-child(1) {
   margin-bottom: 30px;
@@ -284,7 +296,7 @@ nav .icon-bar-blue {
   margin-right: 30px;
 }
 #service .m-bot {
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 #service .border div:nth-child(1),
